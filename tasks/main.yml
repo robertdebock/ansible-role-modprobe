@@ -1,0 +1,9 @@
+---
+# tasks file for modprobe
+- name: load requested modules
+  modprobe:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ modprobe_modules }}"
+  when:
+    - modprobe_modules is defined
