@@ -4,7 +4,7 @@ Load modules.
 
 |Travis|GitHub|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-modprobe.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-modprobe)|[![github](https://github.com/robertdebock/ansible-role-modprobe/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-modprobe/actions)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/modprobe)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/modprobe)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-modprobe.svg)](https://github.com/robertdebock/ansible-role-modprobe/releases/)|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-modprobe.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-modprobe)|[![github](https://github.com/robertdebock/ansible-role-modprobe/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-modprobe/actions)|[![quality](https://img.shields.io/ansible/quality/49078)](https://galaxy.ansible.com/robertdebock/modprobe)|[![downloads](https://img.shields.io/ansible/role/d/49078)](https://galaxy.ansible.com/robertdebock/modprobe)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-modprobe.svg)](https://github.com/robertdebock/ansible-role-modprobe/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -18,6 +18,8 @@ This example is taken from `molecule/resources/converge.yml` and is tested on ea
 
   roles:
     - role: robertdebock.modprobe
+      modprobe_modules:
+        - br_netfilter
 ```
 
 The machine may need to be prepared using `molecule/resources/prepare.yml`:
