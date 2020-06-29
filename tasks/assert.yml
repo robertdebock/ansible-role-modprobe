@@ -1,0 +1,17 @@
+---
+- name: test if modprobe_modules is set correctly
+  assert:
+    that:
+      - modprobe_modules | length > 0
+      - modprobe_modules is iterable
+  when:
+    - modprobe_modules is defined
+
+- name: test if item in modprobe_modules is set correctly
+  assert:
+    that:
+      - item is defined
+      - item | length > 0
+  loop: "{{ modprobe_modules }}"
+  when:
+    - modprobe_modules is defined
