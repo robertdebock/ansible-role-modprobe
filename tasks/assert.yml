@@ -12,6 +12,7 @@
     that:
       - item is defined
       - item | length > 0
+    quiet: yes
   loop: "{{ modprobe_modules }}"
   when:
     - modprobe_modules is defined
