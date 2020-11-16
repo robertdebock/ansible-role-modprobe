@@ -2,7 +2,6 @@
 - name: test if modprobe_modules is set correctly
   assert:
     that:
-      - modprobe_modules | length > 0
       - modprobe_modules is iterable
     quiet: yes
   when:
@@ -12,7 +11,6 @@
   assert:
     that:
       - item is defined
-      - item | length > 0
     quiet: yes
   loop: "{{ modprobe_modules }}"
   when:
