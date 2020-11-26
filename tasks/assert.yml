@@ -1,4 +1,5 @@
 ---
+
 - name: test if modprobe_modules is set correctly
   assert:
     that:
