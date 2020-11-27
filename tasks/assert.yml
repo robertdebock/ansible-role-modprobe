@@ -12,6 +12,7 @@
   assert:
     that:
       - item is defined
+      - item is string
     quiet: yes
   loop: "{{ modprobe_modules }}"
   when:
