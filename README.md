@@ -2,9 +2,9 @@
 
 Load modules.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-modprobe.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-modprobe)|[![github](https://github.com/robertdebock/ansible-role-modprobe/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-modprobe/actions)|[![quality](https://img.shields.io/ansible/quality/49078)](https://galaxy.ansible.com/robertdebock/modprobe)|[![downloads](https://img.shields.io/ansible/role/d/49078)](https://galaxy.ansible.com/robertdebock/modprobe)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-modprobe.svg)](https://github.com/robertdebock/ansible-role-modprobe/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-modprobe.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-modprobe)|[![github](https://github.com/robertdebock/ansible-role-modprobe/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-modprobe/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-modprobe/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-modprobe)|[![quality](https://img.shields.io/ansible/quality/49078)](https://galaxy.ansible.com/robertdebock/modprobe)|[![downloads](https://img.shields.io/ansible/role/d/49078)](https://galaxy.ansible.com/robertdebock/modprobe)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-modprobe.svg)](https://github.com/robertdebock/ansible-role-modprobe/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
