@@ -5,5 +5,7 @@ _modprobe_requirements:
   default: []
   RedHat:
     - kmod
+  Debian:
+    - kmod
 
 modprobe_requirements: "{{ _modprobe_requirements[ansible_os_family] | default(_modprobe_requirements['default']) }}"
