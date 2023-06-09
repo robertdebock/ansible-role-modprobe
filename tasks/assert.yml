@@ -13,6 +13,7 @@
     that:
       - item is defined
       - item is string
+      - item is not none
     quiet: yes
   loop: "{{ modprobe_modules }}"
   when:
