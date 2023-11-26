@@ -1,4 +1,4 @@
-# Ansible role [modprobe](#modprobe)
+# [Ansible role modprobe](#modprobe)
 
 Load modules.
 
