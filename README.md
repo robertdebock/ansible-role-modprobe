@@ -20,7 +20,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   roles:
     - role: robertdebock.modprobe
       modprobe_modules:
-        - br_netfilter
+        - overlay
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-modprobe/blob/master/molecule/default/prepare.yml):
