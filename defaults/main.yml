@@ -5,3 +5,7 @@
 # modprobe_modules:
 #   - br_netfilter
 modprobe_modules: []
+
+# Persistency between reboots for configured modules
+# Choices: "disabled" (default), "present", "absent"
+modprobe_persistent: disabled
