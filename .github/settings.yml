@@ -5,4 +5,4 @@
 repository:
   description: Load modules.
   homepage: https://robertdebock.nl/
-  topics: modprobe, system, ansible, molecule, tox, playbook
+  topics: modprobe, system, ansible, molecule, playbook
