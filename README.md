@@ -17,10 +17,17 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   become: true
   gather_facts: true
 
+  pre_tasks:
+    - name: Check if the kernel has a module directory
+      ansible.builtin.stat:
+        path: "/lib/modules/{{ ansible_facts['kernel'] }}"
+      register: modprobe_kernel_modules
+
   roles:
     - role: robertdebock.modprobe
-      modprobe_modules:
-        - overlay
+      # Some CI kernels (the GitLab shared runners) have no /lib/modules, loading a module is impossible there.
+      # GitHub Actions has them, so the role is still tested for real there.
+      modprobe_modules: "{{ ['overlay'] if modprobe_kernel_modules.stat.exists else [] }}"
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-modprobe/blob/master/molecule/default/prepare.yml):
